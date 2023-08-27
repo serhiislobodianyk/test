@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Wavefont:wght@200;600&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(43deg, rgba(65, 88, 208, 0.7) 0%, rgba(200, 80, 192, 0.7) 46%, rgba(255, 204, 112, 0.7) 100%);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: yellow;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+    display: inline-block;
+    justify-content: space-around;
+    margin-right: 20px;
+    
+
+}
+
+@media screen and (max-width: 575px) {
+    ul {
+      flex-direction: column;
+      align-items: baseline;
+    }
+    .logo {
+        color: aqua;
+        margin-left: -50px;
+        padding-left: 0rem;
+        
+        
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: stretch;
+        
+    }
+    .product-gallery {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    body {
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+
+    main, .container {
+        flex-direction: column;
+    }
+  }
+
+
+  body {
+    background: linear-gradient(43deg, rgba(65, 88, 208, 0.7) 0%, rgba(200, 80, 192, 0.7) 46%, rgba(255, 204, 112, 0.7) 100%);
+    
+  }
+
+  main img {
+    margin: 0.4rem;
+    width: 50%;
+    flex: 1;
+    object-fit: cover;
+   border-radius: 500px;
+  }
+
+  main {
+    display: flex;
+    flex-wrap:wrap-reverse;
+  }
+
+main  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: yellow;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    background-color: rgba(117, 0, 128, 0.075);;
+    border-radius: 50px;
+    
+}
+main p {
+    color: white;
+    padding: 20px;
+    background-color: rgba(117, 0, 128, 0.075);;
+border-radius: 50px;
+}
+
+.main-button {
+    text-decoration: none;
+    margin: 0px;
+    padding: 10px;
+    align-self: center;
+    margin-top: 1rem;
+    border-radius: 100px;
+    height: 3rem;
+    border-color: white;
+    color: yellow;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(43deg, rgba(65, 88, 208, 0.7) 0%, rgba(200, 80, 192, 0.7) 46%, rgba(255, 204, 112, 0.7) 100%);
+    
+}
+
+.main-button:hover {
+    background: linear-gradient(43deg, rgba(255, 204, 112, 0.7) 0%, rgba(200, 80, 192, 0.7) 46%, rgba(65, 88, 208, 0.7) 100%);
+
+}
+
+
+
+  main div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 10%;
+    /* background-color: blue; */
+  }
+
+
+  .product-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: yellow;
+    text-align: center;
+    margin-top: 5rem;
+
+  }
+
+  .product-gallery {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .product1, .product2, .product3 {
+    margin: 5px;
+    display: flex;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(43deg, rgba(255, 204, 112, 0.7) 0%, rgba(200, 80, 192, 0.7) 46%, rgba(65, 88, 208, 0.7) 100%);
+    border: 1px solid none;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    color: yellow
+  }
+
+  .buy-btn {
+    align-self: flex-end;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+  .buy-btn a {
+    text-decoration: none;
+    overflow: hidden;
+  }
